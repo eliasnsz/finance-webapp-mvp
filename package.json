@@ -1,20 +1,24 @@
 {
-  "name": "finance-app-mvp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.27.0",
-  "dependencies": {
-    "next": "^16.2.11",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
-  }
+	"name": "finance-app-mvp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint:check": "biome check",
+		"lint:fix": "biome format --write"
+	},
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.27.0",
+	"dependencies": {
+		"next": "^16.2.11",
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.5"
+	}
 }
