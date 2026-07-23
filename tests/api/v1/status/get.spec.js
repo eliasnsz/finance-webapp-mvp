@@ -1,5 +1,5 @@
+import orchestrator from "@tests/orchestrator";
 import { beforeAll } from "vitest";
-import orchestrator from "../../../orchestrator";
 
 describe("GET /api/v1/status", () => {
 	beforeAll(async () => {

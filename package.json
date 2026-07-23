@@ -23,7 +23,8 @@
 		"next": "^16.2.11",
 		"pg": "^8.22.0",
 		"react": "^19.2.8",
-		"react-dom": "^19.2.8"
+		"react-dom": "^19.2.8",
+		"vite-jsconfig-paths": "^2.0.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.5",
