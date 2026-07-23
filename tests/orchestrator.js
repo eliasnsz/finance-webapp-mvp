@@ -1,4 +1,5 @@
 import retry from "async-retry";
+import database from "@/infra/database.js";
 
 async function waitForWebServer() {
 	await retry(checkHealth, { maxTimeout: 1000, retries: 100 });
@@ -12,6 +13,13 @@ async function waitForWebServer() {
 	}
 }
 
+async function clearDatabase() {
+	return await database.query(
+		"DROP SCHEMA public CASCADE; CREATE SCHEMA public;",
+	);
+}
+
 export default Object.freeze({
 	waitForWebServer,
+	clearDatabase,
 });

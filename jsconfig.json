@@ -1,9 +1,9 @@
 {
 	"compilerOptions": {
-		"module": "nodenext",
 		"paths": {
 			"@/*": ["./src/*"],
 			"@tests/*": ["./tests/*"]
-		}
+		},
+		"types": ["vitest/globals"]
 	}
 }
